@@ -1,0 +1,14 @@
+:host{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 60dvh;
+    #hero-image{
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        width: 100%;
+    }
+}

@@ -1,0 +1,98 @@
+:host{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 90dvh;
+    color: var(--white-color);
+    background-image: linear-gradient(90deg , black,transparent 70% , transparent);
+    #hero-image{
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        width: 100%;
+    }
+    #text{
+        display: flex;
+        flex-direction: column;
+        width: calc(100vw - 12rem);
+        nav{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            height: 84px;
+            border-bottom: 1px solid var(--white-color);
+            #text-links{
+                *{
+                    padding: 0 24px;
+                    font-weight: 500;
+                }
+            }
+        }
+        #words-below-nav{
+            margin-top: 15px;
+            margin-bottom: 120px;
+        }
+        #car-name-prefix{
+            font-weight: 300;
+            letter-spacing: 10px;
+        }
+        #car-name{
+            font-size: 210px;
+            font-weight: 300;
+        }
+        #describe{
+            display: flex;
+            font-size: 23px;
+          
+            #ix-icon{
+                display: inline-block;
+                width: auto;
+                height: 1em;
+                vertical-align: baseline;
+                margin-right: 8px;
+              }
+        }
+        #buttons{
+            margin-top: 40px;
+            #order-right-now{
+                background-color: #1c69d4;
+                color: #fff;
+                padding: 4px;
+                min-height: 3.25rem;
+                width: 15%;
+                border-radius: 3px;
+                border: none;
+                margin-right: 20px;
+                cursor: pointer;
+                &:hover{
+                    filter: brightness(0.7);
+                }
+            }
+            #know-more{
+                border-radius: 3px;
+                border: 1px solid #f2f2f2;
+                background-color: #0000;
+                color: #f2f2f2;
+                min-height: 3.25rem;
+                width: 15%;
+                cursor: pointer;
+                &:hover{
+                   border-color: #fff;
+                   color: #fff;
+                }
+            }
+        }
+    }
+  
+}
+
+
+
+
+
+
+@media screen and (max-width:1280px) {
+    
+}
