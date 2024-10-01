@@ -2,6 +2,7 @@
     a{
         text-decoration: none;
         color: black;
+        font-size: 14px;
     }
     #all-type-link{
         display: flex;
@@ -78,4 +79,30 @@
         background-color: #afafaf;
         }
     }
+}
+
+@media screen and  (max-width:768px){
+
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    :host{
+        #all-type-link{           
+            padding: 3rem 3rem;                     
+        }
+        #links-section{                   
+            #main-links{
+                padding: 3rem 3rem;                                           
+            }
+            #logo-links{
+                padding: 3rem 3rem;              
+            }
+        }        
+        #copyright{
+            padding: 3rem 3rem;           
+        }
+    }
+}
+@media screen and (min-width:1024px) and (max-width:1280px) {
+   
 }
