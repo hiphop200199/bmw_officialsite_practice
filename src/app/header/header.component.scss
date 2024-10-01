@@ -3,21 +3,23 @@
     display:block;
     // justify-content: center;
     width: 100vw;
-    height: 95dvh;
+    height: 45vw;
     color: var(--white-color);
     #img-box{
         position: absolute;
+        width: 100%;
+        height: 45vw;
+        background-image: linear-gradient(90deg, black,transparent 70%, transparent );
+       
+        z-index: -1;
+    }
+    #hero-image{      
+        position: absolute;
         left: 0;
         top: 0;
-        display: block;
-        background-image: linear-gradient(110deg , black,transparent 60% , transparent);
-       
-        #hero-image{      
-            position: relative;
-            z-index: -2;
-            width: 100vw;
-           
-        }
+        z-index: -2;
+        width: 100vw;
+        height: 45vw;
     }
    
     #text{
@@ -44,8 +46,10 @@
                 align-items: center;
                 cursor: pointer;
                 height: 100%;
-                left: -150px;
                 
+                a#logo{
+                    margin-right: 30px;
+                }
                 a:nth-child(2){
                     //margin-left: 30px;
                     margin-right: 20px;
@@ -156,14 +160,12 @@
 
 
 @media screen and  (max-width:768px){
-
-}
-
-@media screen and (min-width:768px) and (max-width:1024px) {
     :host{
+        height: 60dvh;
         #img-box{
-            background-image: linear-gradient(0deg , black 50%, #00000012 55%);
+            background-image: linear-gradient(180deg, #0000, #000 8pc) ;
             height: 100%;
+            top: 20vw;          
         }
         #text{
             width: calc(100vw - 6rem);
@@ -171,7 +173,9 @@
             nav{
                 border-bottom-color:transparent ;
                 #text-links{
-                    display: none;
+                    a:not(#logo){
+                        display: none;
+                    }
                   }
                 #logo-links{
                     a#location{
@@ -187,7 +191,67 @@
             }
             #car-info{
                 width: 80%;
-                top: 50%;
+                top: 28vw;               
+                left: calc(50% - 40%);              
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                #car-name{
+                    font-size: 126px;
+                }
+                #buttons{
+                    margin-top: 0;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    #order-right-now{
+                        width: 100%;
+                        margin-right: 0;
+                        margin-bottom: 20px;
+                    }   
+                    #know-more{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    :host{
+        height: 65dvh;
+        #img-box{
+            background-image: linear-gradient(180deg, #0000, #000 8pc) ;
+            height: 100%;
+            top: 25vw;        
+        }
+        #text{
+            width: calc(100vw - 6rem);
+            left: 3rem;
+            nav{
+                border-bottom-color:transparent ;
+                #text-links{
+                    a:not(#logo){
+                        display: none;
+                    }
+                  }
+                #logo-links{
+                    a#location{
+                        display: none;
+                    }
+                    a#hamburger{
+                        display: flex;
+                    }
+                }
+            }
+            #words-below-nav{
+                color: transparent;
+            }
+            #car-info{
+                width: 80%;
+                top: 28vw;
                 left: calc(50% - 40%);              
                 display: flex;
                 flex-direction: column;
@@ -211,7 +275,9 @@
             nav{
                 border-bottom-color:transparent ;
                 #text-links{
-                  display: none;
+                  a:not(#logo){
+                    display: none;
+                  }
                 }
                 #logo-links{
                     a#location{

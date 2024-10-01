@@ -2,28 +2,29 @@
     position: relative;
     display: block;
     width: 100vw;
-    height: 75dvh;
+    height: 35vw;
     margin-bottom: 100px;
   //  background-image: linear-gradient(0deg , black,transparent 70% , transparent);
     color: var(--white-color);
     #img-box{
         position: absolute;
+        width: 100%;
+        height: 35vw;
+        background-image: linear-gradient(0deg, black,transparent 60%, transparent);         
+        z-index: -1;
+    }
+    #hero-image{      
+        position: absolute;
         left: 0;
         top: 0;
-        display: block;
-        background-image: linear-gradient(0deg , black,transparent 70% , transparent);
-       
-        #hero-image{      
-            position: relative;
-            z-index: -2;
-            width: 100vw;
-           
-        }
+        z-index: -2;
+        width: 100vw;
+        height: 35vw;
     }
     #text{
         position: relative;
         left: 6rem;
-        top: 6rem;
+        top: calc(17.5vw - 194px);
         #car-name-prefix{
             margin-top: 15px;
         }
@@ -60,64 +61,118 @@
     }
 }
 
-@media screen and  (max-width:768px){
-
+@media screen  and (max-width:600px){ 
+    :host{
+        height: 80dvh;
+        #img-box{
+            background-image: linear-gradient(180deg, #0000, #000 8pc) ;
+            height: 100%;
+            top: 70vw;           
+        }
+        #hero-image{
+            content: url('https://bmw.scene7.com/is/image/BMW/P001_FB-1_G60-8135_Ext_Dsk_v001:1to1?fmt=webp&wid=600&hei=600');
+            height: auto;
+        }
+        #text{
+            width: 80%;
+            top: calc(100% - 286px);
+            left: calc(50% - 40%);              
+            display: flex;
+            flex-direction: column;
+            align-items: center;        
+            #car-name-prefix{
+                margin-top: 0px;
+            }
+            #describe{
+                margin-bottom: 10px;
+            }
+            #car-name{
+                font-size: 126px;            
+            }  
+            #know-more{
+                width: 100%;
+            }
+        }
+    }
+}
+@media screen and (min-width:600px) and (max-width:768px){
+:host{
+    height: 90vw;
+    #img-box{
+        background-image: linear-gradient(180deg, #0000, #000 8pc) ;
+        height: 100%;
+        top: 45vw;      
+    }
+    #hero-image{
+        content: url('https://bmw.scene7.com/is/image/BMW/P001_FB-1_G60-8135_Ext_Dsk_v001:3to2?fmt=webp&wid=1024&hei=683');
+        height: auto;
+    }
+    #text{
+        width: 80%;
+        top: calc(100% - 286px);
+        left: calc(50% - 40%);              
+        display: flex;
+        flex-direction: column;
+        align-items: center;        
+        #car-name-prefix{
+            margin-top: 0px;
+        }
+        #describe{
+            margin-bottom: 10px;
+        }
+        #car-name{
+            font-size: 126px;            
+        }  
+        #know-more{
+            width: 100%;
+        }
+    }
+}
 }
 
 @media screen and (min-width:768px) and (max-width:1024px) {
     :host{
+        height: 90vw;
         #img-box{
-            background-image: linear-gradient(0deg , black,transparent 60% , transparent);
+            background-image: linear-gradient(180deg, #0000, #000 8pc) ;
+            height: 100%;
+            top: 45vw;           
+        }
+        #hero-image{
+            content: url('https://bmw.scene7.com/is/image/BMW/P001_FB-1_G60-8135_Ext_Dsk_v001:3to2?fmt=webp&wid=1024&hei=683');
+            height: auto;
         }
         #text{
-            width: calc(100vw - 6rem);
-            left: 3rem;
-            nav{
-                border-bottom-color:transparent ;
-                #logo-links{
-                    a#location{
-                        display: none;
-                    }
-                    a#hamburger{
-                        display: flex;
-                    }
-                }
+            width: 80%;
+            top: calc(100% - 286px);
+            left: calc(50% - 40%);              
+            display: flex;
+            flex-direction: column;
+            align-items: center;      
+            #car-name-prefix{
+                margin-top: 0px;
             }
-            #words-below-nav{
-                color: transparent;
-            }
-            #car-info{
-                #car-name{
-                    font-size: 126px;
-                }
+            #describe{
+                margin-bottom: 10px;
+            }  
+            #car-name{
+                font-size: 126px;            
+            }  
+            #know-more{
+                width: 40%;
             }
         }
     }
 }
 @media screen and (min-width:1024px) and (max-width:1280px) {
-    :host{
+    :host{       
         #text{
             width: calc(100vw - 6rem);
-            left: 3rem;
-            nav{
-                border-bottom-color:transparent ;
-                #logo-links{
-                    a#location{
-                        display: none;
-                    }
-                    a#hamburger{
-                        display: flex;
-                    }
-                }
-            }
-            #words-below-nav{
-                color: transparent;
-            }
-            #car-info{
-                #car-name{
-                    font-size: 126px;
-                }
-            }
+            left: 3rem; 
+            top: calc(17.5vw - 145.5px);          
+            #car-name{
+                font-size: 126px;            
+            }  
         }
     }
 }

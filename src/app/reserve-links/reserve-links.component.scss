@@ -67,12 +67,34 @@
 
 
 @media screen and  (max-width:768px){
-
+  :host{
+    height: auto;
+    text-align: center;
+    #container{
+      display: flex;
+      flex-direction: column;
+      #text{
+        h1{
+          font-size: 35px;
+        }
+      }
+      #link-cards{
+        display: flex;
+        flex-direction: column;
+        .link-card{
+          button{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (min-width:768px) and (max-width:1024px) {
   :host{
     height: auto;
+    text-align: center;
     #container{
       display: flex;
       flex-direction: column;
