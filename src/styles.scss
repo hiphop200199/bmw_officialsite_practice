@@ -9,3 +9,7 @@ font-family: bmwTypeNextWeb, Arial, Helvetica, Roboto, sans-serif;
 --black-color:#262626;
 --white-color:#ffffff;
 }
+
+:not(:root){
+    overflow-y: hidden;
+}

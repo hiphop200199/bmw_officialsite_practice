@@ -1,14 +1,43 @@
 :host{
     position: relative;
-    display: flex;
-    justify-content: center;
+    display: block;
     width: 100vw;
-    height: 60dvh;
+    height: 65dvh;
+    background-image: linear-gradient(0deg , black,transparent 70% , transparent);
+    color: var(--white-color);
     #hero-image{
         position: absolute;
         left: 0;
         top: 0;
         z-index: -1;
         width: 100%;
+    }
+    #text{
+        position: relative;
+        left: 6rem;
+        top: 12rem;
+        #describe{
+          margin-bottom: 15px;
+        }
+        #title{
+            font-size: 50px;
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+        
+        #know-more{
+            border-radius: 3px;
+                border: 1px solid #f2f2f2;
+                background-color: #0000;
+                color: #f2f2f2;
+                min-height: 3.25rem;
+                width: 15%;
+                cursor: pointer;
+                &:hover{
+                    border-width: 2px;
+                   border-color: #fff;
+                   color: #fff;
+                }
+        }
     }
 }

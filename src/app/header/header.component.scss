@@ -6,6 +6,7 @@
     height: 90dvh;
     color: var(--white-color);
     background-image: linear-gradient(90deg , black,transparent 70% , transparent);
+    
     #hero-image{
         position: absolute;
         left: 0;
@@ -20,13 +21,27 @@
         nav{
             width: 100%;
             display: flex;
+            justify-content: space-between;
             align-items: center;
             height: 84px;
             border-bottom: 1px solid var(--white-color);
             #text-links{
-                *{
-                    padding: 0 24px;
-                    font-weight: 500;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                a:nth-child(2){
+                    margin-left: 30px;
+                    margin-right: 20px;
+                }
+                a:not(#logo){
+                    margin-right: 20px;
+                }
+            }
+            #logo-links{
+                img{
+                    margin-inline: 15px;
+                    height: 1em;
+                    filter: invert(1);
                 }
             }
         }
@@ -67,7 +82,7 @@
                 margin-right: 20px;
                 cursor: pointer;
                 &:hover{
-                    filter: brightness(0.7);
+                    background-color: #0e53b4;
                 }
             }
             #know-more{
@@ -79,6 +94,7 @@
                 width: 15%;
                 cursor: pointer;
                 &:hover{
+                    border-width: 2px;
                    border-color: #fff;
                    color: #fff;
                 }

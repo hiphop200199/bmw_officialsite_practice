@@ -1,14 +1,53 @@
 :host{
     position: relative;
-    display: flex;
-    justify-content: center;
+    display: block;
     width: 100vw;
-    height: 60dvh;
+    height: 65dvh;
+    background-image: linear-gradient(0deg , black,transparent 70% , transparent);
+    color: var(--white-color);
     #hero-image{
         position: absolute;
         left: 0;
         top: 0;
         z-index: -1;
         width: 100%;
+    }
+    #text{
+        position: relative;
+        left: 6rem;
+        top: 6rem;
+        #car-name-prefix{
+            margin-top: 15px;
+        }
+        #car-name{
+            font-size: 210px;
+            font-weight: 300;
+        }
+        #describe{
+            display: flex;
+            font-size: 23px;
+            margin-bottom: 30px;
+            #ix-icon{
+                display: inline-block;
+                width: auto;
+                height: 1em;
+                vertical-align: baseline;
+                margin-right: 8px;
+              }
+        }
+        #know-more{
+            background-color: #1c69d4;
+                color: #fff;
+                padding: 4px;
+                min-height: 3.25rem;
+                width: 15%;
+                border-radius: 3px;
+                border: none;
+                margin-right: 20px;
+                cursor: pointer;
+                &:hover{
+                    background-color: #0e53b4;
+                }
+        }
     }
 }

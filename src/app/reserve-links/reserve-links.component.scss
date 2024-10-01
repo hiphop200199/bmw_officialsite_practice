@@ -3,9 +3,9 @@
   display: flex;
   justify-content: center;
   width: 100vw;
-  height: 50dvh;
+  height: 65dvh;
   #container {
-    width: 85%;
+    width: 90%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
@@ -26,27 +26,30 @@
       }
       h1 {
         font-weight: 300;
-        font-size: 45px;
+        font-size: 60px;
       }
     }
     #link-cards {
       grid-column: span 3;
       display: flex;
       .link-card {
-        //width: calc(100% / 3);
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         text-align: center;
         align-items: center;
+       
         img {
           width: 100%;
         }
         p {
+          font-size: 23px;
+          font-weight: 300;
+          margin-bottom: 40px;
         }
         button {
           min-height: 3.25rem;
-          width: 30%;
+          width: 20%;
           background: none;
           border: 1px solid #262626;
           border-radius: 3px;

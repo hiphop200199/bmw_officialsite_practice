@@ -1,0 +1,36 @@
+:host {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 65dvh;
+  img {
+  }
+  #text {
+    #prefix {
+      margin-top: 15px;
+    }
+    #title {
+      font-size: 35px;
+      font-weight: 300;
+      margin-bottom: 20px;
+    }
+    #describe {
+      font-size: 20px;
+      font-weight: 300;
+      margin-bottom: 30px;
+    }
+    #know-more {
+        background-color: transparent;
+      border-radius: 3px;
+      border: 1px solid black;
+      min-height: 3.25rem;
+      width: 15%;
+      cursor: pointer;
+      &:hover {
+        border-width: 2px;
+      }
+    }
+  }
+}
