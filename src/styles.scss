@@ -4,12 +4,17 @@ padding: 0;
 margin: 0;
 box-sizing: border-box;
 scroll-behavior: smooth;
-overflow-x: hidden;
+overflow-x: clip;
 font-family: bmwTypeNextWeb, Arial, Helvetica, Roboto, sans-serif;
 --black-color:#262626;
 --white-color:#ffffff;
 }
 
-:not(:root){
-    overflow-y: hidden;
+:root{
+    overflow-y: scroll;
+}
+
+@keyframes show{
+    from {opacity: 0;}
+    to{opacity: 1;}
 }
