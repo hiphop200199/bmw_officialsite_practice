@@ -67,11 +67,12 @@
 
 @media screen and (max-width:600px) {
     :host{
-        height: 80dvh;
+        height: 100vw;
+        margin-bottom: 45vw;
         #img-box{
             background-image: linear-gradient(180deg, #0000, #000 8pc) ;
-            height: 100%;
-            top: 70vw;           
+            height: 60%;
+            top: 75%;         
         }
         #hero-image{
             content: url('https://bmw.scene7.com/is/image/BMW/g90_stage_dsk_fb:1to1?fmt=webp&wid=600&hei=600');
@@ -79,11 +80,12 @@
         }
         #text{
             width: 80%;
-            top: calc(100% - 286px);
+            top: calc(100% - 122px);
             left: calc(50% - 40%);              
             display: flex;
             flex-direction: column;
-            align-items: center;        
+            align-items: center;       
+             line-height: 1;
             #car-name-prefix{
                 margin-top: 0px;
             }
@@ -103,10 +105,11 @@
 @media screen and (min-width:600px) and (max-width:768px){
     :host{
         height: 90vw;
+        margin-bottom: 5vw;
         #img-box{
             background-image: linear-gradient(180deg, #0000, #000 8pc) ;
-            height: 100%;
-            top: 45vw;           
+            height: 50%;
+            top: 50%;           
         }
         #hero-image{
             content: url('https://bmw.scene7.com/is/image/BMW/g90_stage_dsk_fb:3to2?fmt=webp&wid=1024&hei=683');
@@ -137,11 +140,11 @@
 
 @media screen and (min-width:768px) and (max-width:1024px) {
     :host{
-        height: 90vw;
+        height: 90vw;        
         #img-box{
             background-image: linear-gradient(180deg, #0000, #000 8pc) ;
-            height: 100%;
-            top: 45vw;           
+            height: 50%;
+            top: 50%;           
         }
         #hero-image{
             content: url('https://bmw.scene7.com/is/image/BMW/g90_stage_dsk_fb:3to2?fmt=webp&wid=1024&hei=683');

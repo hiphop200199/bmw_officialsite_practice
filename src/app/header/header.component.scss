@@ -1,7 +1,6 @@
 :host{
     position: relative;
-    display:block;
-    // justify-content: center;
+    display:block;   
     width: 100vw;
     height: 45vw;
     color: var(--white-color);
@@ -159,15 +158,18 @@
 }
 
 
-
-
-@media screen and  (max-width:768px){
+@media screen and (max-width:600px) {
     :host{
-        height: 60dvh;
+        height: 50vw;
+        margin-bottom: 100vw;
         #img-box{
             background-image: linear-gradient(180deg, #0000, #000 8pc) ;
-            height: 100%;
-            top: 20vw;          
+            height: 200%;
+            top: 100%;          
+        }
+        #hero-image{
+            height: auto;
+            content: url('https://bmw.scene7.com/is/image/BMW/0826_originalnew:1to1?fmt=webp&wid=600&hei=600');
         }
         #text{
             width: calc(100vw - 3rem);
@@ -198,7 +200,82 @@
             }
             #car-info{
                 width: 100%;
-                top: 28vw;            
+                top: calc(150vw - 372px);
+                padding-right: 1.5rem;   
+                left: 0;              
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                #car-name{
+                    font-size: 126px;
+                }
+                #describe{
+                    p{
+                        font-size: 19px;
+                    }
+                }
+                #buttons{
+                    margin-top: 0;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    #order-right-now{
+                        width: 100%;
+                        margin-right: 0;
+                        margin-bottom: 20px;
+                    }   
+                    #know-more{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:768px){
+    :host{
+        height: 50vw;
+        margin-bottom: 25vw;
+        #img-box{
+            background-image: linear-gradient(180deg, #0000, #000 8pc) ;
+            height: 100%;
+            top: 50%;          
+        }
+        #hero-image{
+            height: 50vw;
+        }
+        #text{
+            width: calc(100vw - 3rem);
+            left: 1.5rem;
+            nav{
+                border-bottom-color:transparent ;
+                padding-right: 1.5rem;
+                #text-links{
+                    a:not(#logo){
+                        display: none;
+                    }
+                    a#logo img{
+                        height: 36px;
+                    }
+                  }
+                #logo-links{
+                    
+                    a#location{
+                        display: none;
+                    }
+                    a#hamburger{
+                        display: flex;
+                    }
+                }
+            }
+            #words-below-nav{
+                color: transparent;
+            }
+            #car-info{
+                width: 100%;
+                top: calc(50vw - 192px);
                 padding-right: 1.5rem;   
                 left: 0;              
                 display: flex;
@@ -234,15 +311,19 @@
 
 @media screen and (min-width:768px) and (max-width:1024px) {
     :host{
-        height: 65dvh;
+        height: 50vw;
+        margin-bottom: 25vw;
         #img-box{
             background-image: linear-gradient(180deg, #0000, #000 8pc) ;
             height: 100%;
             top: 25vw;        
         }
+        #hero-image{
+            height: 50vw;
+        }
         #text{
             width: calc(100vw - 6rem);
-            left: 3rem;
+            left: 3rem;           
             nav{
                 border-bottom-color:transparent ;
                 #text-links{
@@ -264,7 +345,7 @@
             }
             #car-info{
                 width: 80%;
-                top: 28vw;
+                top: 30vw;
                 left: calc(50% - 40%);              
                 display: flex;
                 flex-direction: column;

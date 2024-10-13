@@ -55,18 +55,41 @@
 }
 @media screen and (max-width:600px){
     :host{
+        height: 100vw;
+        margin-bottom: 30vw;
+        #img-box{
+            background-image: linear-gradient(180deg, #0000, #000 8pc) ;
+            height: 75%;
+            top: 35%; 
+        }
         #hero-image{
-            content: url('https://bmw.scene7.com/is/image/BMW/imgix_cut:1to1?fmt=webp&wid=600&hei=600');
+            content: url('https://bmw.scene7.com/is/image/BMW/imgix_cut:1to1?fmt=webp&wid=600&hei=600');       
+            height: auto;     
+        }
+        #text{
+            width: 80%;
+            top: calc(100% - 165px);
+            left: calc(50% - 40%);              
+            display: flex;
+            flex-direction: column;
+            align-items: center;               
+            #title{
+                font-size: 35px;
+            }
+            #know-more{
+                width: 100%;
+            }    
         }
     }
 }
 @media screen and  (max-width:768px){
     :host{
-        height: 90vw;
+        height: 100vw;
+        margin-bottom: 30vw;
         #img-box{
             background-image: linear-gradient(180deg, #0000, #000 8pc) ;
-            height: 100%;
-            top: 45vw; 
+            height: 75%;
+            top: 35%; 
         }
         #hero-image{
             content: url('https://bmw.scene7.com/is/image/BMW/imgix_cut:3to2?fmt=webp&wid=1024&hei=683');
@@ -94,8 +117,8 @@
         height: 90vw;
         #img-box{
             background-image: linear-gradient(180deg, #0000, #000 8pc) ;
-            height: 100%;
-            top: 45vw; 
+            height: 50%;
+            top: 50%;    
         }
         #hero-image{
             content: url('https://bmw.scene7.com/is/image/BMW/imgix_cut:3to2?fmt=webp&wid=1024&hei=683');
